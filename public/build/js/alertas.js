@@ -1,0 +1,1 @@
+function eliminarMensajes(){const e=document.querySelectorAll(".alerta"),n=document.querySelector(".resumen");e&&!n&&setTimeout(()=>{e.forEach(e=>{e.parentElement.removeChild(e)})},3500)}document.addEventListener("DOMContentLoaded",()=>{eliminarMensajes()});
