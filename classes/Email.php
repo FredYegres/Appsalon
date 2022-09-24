@@ -36,7 +36,7 @@ class Email {
 
         $contenido = "<html>";
         $contenido .= "<p><strong>Hola " . $this->nombre . "</strong> Has creado tu cuenta en App Salon, confirmala entrando al siguiente enlace:</p>";
-        $contenido .= "<p>Presiona aquí: <a href='http://localhost:3000/confirm-account?token=" . $this->token . "'>Confirmar Cuenta</a></p>";
+        $contenido .= "<p>Presiona aquí: <a href='https://appsalon-mvc.herokuapp.com/confirm-account?token=" . $this->token . "'>Confirmar Cuenta</a></p>";
         $contenido .= "<p>Si no solicitaste este email, puedes ignorar el mensaje</p>";
         $contenido .= "</html>";
 
@@ -66,7 +66,7 @@ class Email {
  
          $contenido = "<html>";
          $contenido .= "<p><strong>Hola " . $this->nombre . "</strong> Has solicitado reestablecer tu contraseña, para hacerlo entra al siguiente enlace:</p>";
-         $contenido .= "<p>Presiona aquí: <a href='http://localhost:3000/recover?token=" . $this->token . "'>Reestablecer Contraseña</a></p>";
+         $contenido .= "<p>Presiona aquí: <a href='https://appsalon-mvc.herokuapp.com/recover?token=" . $this->token . "'>Reestablecer Contraseña</a></p>";
          $contenido .= "<p>Si no solicitaste este email, puedes ignorar el mensaje</p>";
          $contenido .= "</html>";
  
