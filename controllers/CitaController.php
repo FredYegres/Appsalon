@@ -10,7 +10,7 @@ class CitaController {
 
         $router->render('appointment/index', [
             'nombre' => $_SESSION['nombre'],
-            'id' => $_SESSION['id']
+            'id' => $_SESSION['id'],
         ]);
     }
 }

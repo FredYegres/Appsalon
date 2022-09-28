@@ -3,6 +3,7 @@
 namespace Controllers;
 
 use Model\Cita;
+use Model\CitaReservada;
 use Model\CitaServicio;
 use Model\Servicio;
 
@@ -10,6 +11,11 @@ class APIController {
     public static function index() {
         $servicios = Servicio::all();
         echo json_encode($servicios);
+    }
+
+    public static function getAppointments() {
+        $citas = CitaReservada::all();
+        echo json_encode($citas);
     }
 
     public static function save() {

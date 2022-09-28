@@ -36,6 +36,7 @@ $router->get('/admin', [AdminController::class, 'index']);
 
 //API de citas
 $router->get('/api/services', [APIController::class, 'index']);
+$router->get('/api/appointment', [APIController::class, 'getAppointments']);
 $router->post('/api/appointment', [APIController::class, 'save']);
 $router->post('/api/delete', [APIController::class, 'delete']);
 
